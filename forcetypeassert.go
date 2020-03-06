@@ -8,6 +8,10 @@ import (
 	"golang.org/x/tools/go/ast/inspector"
 )
 
+type Test struct {
+	Test string `json:"resource",`
+}
+
 var Analyzer = &analysis.Analyzer{
 	Name: "forcetypeassert",
 	Doc:  Doc,
